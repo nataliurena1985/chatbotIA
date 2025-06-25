@@ -37,7 +37,7 @@ while True:
     mensajes.append({"role": "user", "content": pregunta})
     try:
         respuesta = openai.ChatCompletion.create(
-            model="gpt-4o",
+            model="gpt-4.0-mini",
             messages=mensajes,
             temperature=0.5,
             max_tokens=600
